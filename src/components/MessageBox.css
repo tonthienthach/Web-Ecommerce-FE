@@ -1,0 +1,97 @@
+.message-section {
+  width: 58px;
+  height: 58px;
+  position: fixed;
+  bottom: 9%;
+  right: 12px;
+  z-index: 999;
+}
+
+.message-icon {
+  width: 58px;
+  height: 58px;
+  position: fixed;
+  bottom: 10%;
+  right: 10px;
+  padding: 8px 10px;
+  border: 1px solid rgb(203, 203, 203);
+  border-radius: 100%;
+  background-color: white;
+}
+
+.notification {
+  z-index: 999;
+}
+
+.message-icon:hover {
+  border: 1px solid rgb(137, 137, 137);
+}
+
+.message-icon:active {
+  border: 1px solid rgb(137, 137, 137);
+  background-color: rgb(193, 192, 192);
+}
+
+.message-box {
+  position: fixed;
+  bottom: 0;
+  right: 90px;
+  z-index: 999;
+  box-shadow: 0px 0px 2px gray;
+  height: 640px;
+  width: 420px !important;
+  min-width: 320px !important;
+}
+
+.btn-clear {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.message-body-box {
+  height: 84%;
+  overflow-y: scroll;
+}
+
+.message-item-send {
+  background-color: #296fca;
+  max-width: 400px;
+  border-radius: 12px;
+  color: white;
+  margin: 8px 0;
+  width: fit-content;
+  align-self: flex-end;
+}
+.message-item-receive {
+  background-color: #808080;
+  max-width: 400px;
+  border-radius: 12px;
+  color: white;
+  margin: 8px 0;
+  width: fit-content;
+  align-self: flex-start;
+}
+
+.btn-send {
+  background-color: #1c66c7;
+  color: white;
+}
+.btn-send:hover {
+  background-color: #114282;
+  color: white;
+}
+.btn-send:active {
+  background-color: #0554bc;
+  color: white;
+}
+
+.section-input {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.list-image {
+  width: 86%;
+}
