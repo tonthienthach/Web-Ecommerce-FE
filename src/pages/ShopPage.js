@@ -14,7 +14,7 @@ function ShopPage() {
     const getListProductHandle = async () => {
       const { data } = await productApi.getListProduct();
       const price = query.get("price");
-      console.log(typeof price);
+      console.log("product", data);
       if (price !== "0" && price !== null) {
         const price1 = parseInt(price.split("-")[0]);
         const price2 = parseInt(price.split("-")[1]);
