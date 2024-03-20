@@ -32,7 +32,9 @@ function Login() {
   };
 
   const handleLoginGoogle = () => {
-    window.location.replace(process.env.URL_API + "/api/auth/google");
+    window.location.replace(
+      process.env.REACT_APP_API_ENDPOINT + "/api/auth/google"
+    );
     // navigate("http://localhost:5000/api/auth/google");
   };
 

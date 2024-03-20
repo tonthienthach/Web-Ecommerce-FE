@@ -18,7 +18,7 @@ import CropOriginalIcon from "@mui/icons-material/CropOriginal";
 import MessageListItem from "../../components/MessageListItem";
 import { Alert } from "react-bootstrap";
 
-const socket = io(process.env.URL_API, {
+const socket = io(process.env.REACT_APP_API_ENDPOINT, {
   transports: ["websocket"],
 });
 

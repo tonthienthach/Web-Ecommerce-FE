@@ -9,7 +9,7 @@ import messageApi from "../axios/messageApi";
 import CropOriginalIcon from "@mui/icons-material/CropOriginal";
 import Slider from "react-slick";
 
-const socket = io(process.env.URL_API, {
+const socket = io(process.env.REACT_APP_API_ENDPOINT, {
   transports: ["websocket"],
 });
 
