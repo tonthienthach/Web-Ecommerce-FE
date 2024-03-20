@@ -7,10 +7,10 @@ const instance = axios.create({
 instance.interceptors.request.use((config) => {
   const token = localStorage.token;
   config.headers.Authorization = `Bearer ${token}`;
-  config.headers.post["Access-Control-Allow-Origin"] = "*";
-  config.headers.post["Access-Control-Allow-Credentials"] = "true";
-  config.headers.post["Access-Control-Allow-Methods"] =
-    "PUT, POST, GET, DELETE, PATCH, OPTIONS";
+  // config.headers.post["Access-Control-Allow-Origin"] = "*";
+  // config.headers.post["Access-Control-Allow-Credentials"] = "true";
+  // config.headers.post["Access-Control-Allow-Methods"] =
+  //   "PUT, POST, GET, DELETE, PATCH, OPTIONS";
   return config;
 });
 
