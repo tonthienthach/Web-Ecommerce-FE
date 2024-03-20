@@ -114,11 +114,13 @@ function ShopPage() {
                 currentItems.map((product) => (
                   <ProductPreview key={product._id} {...product} />
                 ))}
-              <Pagination
-                itemsPerPage={12}
-                items={products}
-                setCurrentItems={setCurrentItems}
-              />
+              {products.length && (
+                <Pagination
+                  itemsPerPage={12}
+                  items={products}
+                  setCurrentItems={setCurrentItems}
+                />
+              )}
             </div>
           </div>
           {/* <!-- Shop Product End --> */}
